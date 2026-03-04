@@ -1,0 +1,12 @@
+positive_label: hallucinated
+binary_map:
+  supported: 0
+  contradicted: 1
+  unsupported: 1
+  partially_supported: 1
+  insufficient_evidence: null
+uncertain_truth_policy: exclude_and_report
+failed_detection_policy: exclude_and_report_coverage
+span_iou_threshold: 0.5
+bootstrap_unit: source_group
+bootstrap_seed: 17

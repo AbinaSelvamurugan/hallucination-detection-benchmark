@@ -1,0 +1,19 @@
+# For USER-supplied labelled CSV/JSONL with these exact columns.
+columns:
+  id: id
+  question: question
+  evidence: evidence
+  reference_answer: reference_answer
+  answer: answer
+  label: label
+  task: task
+  group_id: source_group
+  split: split
+  generator: generator
+  source_id: source_id
+labels:
+  supported: supported
+  contradicted: contradicted
+  unsupported: unsupported
+  partial: partially_supported
+  unknown: insufficient_evidence

@@ -1,0 +1,19 @@
+heuristic:
+  threshold: 0.45
+semantic:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  revision: c21050a7ef692090620a6d037dd736908f9c7cf6
+  device: cpu
+  threshold: 0.60
+  local_files_only: false
+nli:
+  model: cross-encoder/nli-deberta-v3-base
+  revision: 051133896da0ee0fa7074a5e36bde50b5d9443da
+  device: cpu
+  local_files_only: false
+  max_length: 512
+# Optional only after `hallubench train`; trusted checkpoint loading only.
+# classifier:
+#   checkpoint: results/model.joblib
+# judge:
+#   model: explicit-deployed-provider-model-id

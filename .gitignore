@@ -1,0 +1,19 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.cache/
+*.joblib
+*.parquet
+/data/*
+!/data/README.md
+/results/*
+!/results/README.md
+
+# Keep the *explicitly labeled fixture-only* output artifacts in the GitHub repository.
+# All other experiment runs and trained weights remain untracked.
+!/results/fixture-smoke/
+!/results/fixture-smoke/**
+!/results/fixture_threshold.json

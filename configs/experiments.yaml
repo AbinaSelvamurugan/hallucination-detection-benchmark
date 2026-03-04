@@ -1,0 +1,7 @@
+seed: 17
+train_fraction: 0.7
+validation_fraction: 0.15
+test_fraction: 0.15
+fixed_upstream_splits_preserved: true
+near_duplicate_threshold: 0.97
+# A final run must freeze dataset revisions and detector thresholds before test access.

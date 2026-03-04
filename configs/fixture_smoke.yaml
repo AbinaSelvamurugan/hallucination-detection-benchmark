@@ -1,0 +1,4 @@
+heuristic:
+  threshold: 0.45
+classifier:
+  checkpoint: results/fixture_clf.joblib

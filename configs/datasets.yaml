@@ -1,0 +1,16 @@
+# Pin HaluEval at an observed immutable Hub revision; pass task to --task.
+halueval:
+  repo: pminervini/HaluEval
+  revision: 72a55d2291cf5f69581e22ac6491b251fc618291
+  configs: [qa, dialogue, summarization]
+  split: data
+  adapter: HaluEval explicit right/hallucinated pairs
+  reported_license: apache-2.0  # Hub mirror metadata; upstream GitHub MIT, see docs
+ragtruth:
+  official_repo: https://github.com/ParticleMedia/RAGTruth
+  local_response: data/ragtruth/response.jsonl
+  local_source: data/ragtruth/source_info.jsonl
+  splits: [train, test]
+  adapter: official JSONL source_id join
+  revision: record the exact git commit or content SHA256
+  reported_license: MIT

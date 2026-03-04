@@ -1,0 +1,2 @@
+-e .
+# For model/data/dashboard features: pip install -e '.[hf,models,judge,dashboard,test]'
