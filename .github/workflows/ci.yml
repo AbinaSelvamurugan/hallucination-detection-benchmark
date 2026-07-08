@@ -1,0 +1,37 @@
+name: Offline tests and fixture smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-and-smoke:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.13']
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install the core package and tests
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[test]'
+      - name: Run deterministic offline tests
+        run: python -m pytest -q
+      - name: Verify data and run offline example
+        run: |
+          hallubench validate --prepared tests/fixtures/toy_prepared.jsonl
+          hallubench run --prepared tests/fixtures/toy_prepared.jsonl --detectors heuristic --output "$RUNNER_TEMP/hallubench-smoke"
+          hallubench report --results "$RUNNER_TEMP/hallubench-smoke"
