@@ -1,0 +1,21 @@
+{
+  "prepared_file": "tests/fixtures/toy_prepared.jsonl",
+  "prepared_sha256": "1d83b359486e9616ae94b62125a63ac65f9a4091a8325f656b71be2efb574ea7",
+  "dataset_revision": [
+    [
+      "TOY_manually_written_unit_fixture",
+      "hand-authored-fixture-v1"
+    ]
+  ],
+  "n_test": 6,
+  "test_ids_sha256": "2fe0f8b170e80beff99e791f2b787375dbaab4a9614ba622d575ac9625dcc4de",
+  "tasks": null,
+  "max_examples": null,
+  "batch_size": 16,
+  "status": "finished",
+  "evaluation_tier": "fixture_smoke",
+  "detectors": {
+    "lexical_overlap": "1/t=0.450",
+    "tfidf_logreg": "822caca8e1fd6e12"
+  }
+}

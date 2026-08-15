@@ -1,0 +1,1099 @@
+{
+  "detectors": {
+    "lexical_overlap": {
+      "aggregate": {
+        "total": 6,
+        "eligible": 5,
+        "evaluated": 5,
+        "coverage": 1.0,
+        "statuses": {
+          "ok": 5,
+          "abstained": 0,
+          "missing_evidence": 1,
+          "error": 0,
+          "unavailable": 0
+        },
+        "excluded_truth_insufficient": 1,
+        "positive_class": "hallucinated",
+        "averaging": "support-versus-hallucination binary",
+        "metrics": {
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.6666666666666666,
+          "macro_f1": 0.5833333333333333,
+          "weighted_f1": 0.5666666666666667,
+          "mcc": 0.4082482904638631,
+          "per_class": {
+            "0": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 2
+            },
+            "1": {
+              "precision": 1.0,
+              "recall": 0.3333333333333333,
+              "f1": 0.5,
+              "support": 3
+            }
+          },
+          "confusion_matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "confusion_labels": [
+            "0",
+            "1"
+          ],
+          "classification_report": {
+            "0": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 2.0
+            },
+            "1": {
+              "precision": 1.0,
+              "recall": 0.3333333333333333,
+              "f1-score": 0.5,
+              "support": 3.0
+            },
+            "accuracy": 0.6,
+            "macro avg": {
+              "precision": 0.75,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.5833333333333333,
+              "support": 5.0
+            },
+            "weighted avg": {
+              "precision": 0.8,
+              "recall": 0.6,
+              "f1-score": 0.5666666666666667,
+              "support": 5.0
+            }
+          },
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        }
+      },
+      "by_task": {
+        "dialogue": {
+          "total": 2,
+          "eligible": 1,
+          "evaluated": 1,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 1,
+            "abstained": 0,
+            "missing_evidence": 1,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 1,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 0.0,
+            "balanced_accuracy": 0.0,
+            "macro_f1": 0.0,
+            "weighted_f1": 0.0,
+            "mcc": 0.0,
+            "per_class": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+              },
+              "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 1
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 0.0
+              },
+              "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 1.0
+              },
+              "accuracy": 0.0,
+              "macro avg": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 1.0
+              },
+              "weighted avg": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 1.0
+              }
+            },
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "qa": {
+          "total": 2,
+          "eligible": 2,
+          "evaluated": 2,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 2,
+            "abstained": 0,
+            "missing_evidence": 0,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 0,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "macro_f1": 0.3333333333333333,
+            "weighted_f1": 0.3333333333333333,
+            "mcc": 0.0,
+            "per_class": {
+              "0": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1": 0.6666666666666666,
+                "support": 1
+              },
+              "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 1
+              }
+            },
+            "confusion_matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1-score": 0.6666666666666666,
+                "support": 1.0
+              },
+              "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 1.0
+              },
+              "accuracy": 0.5,
+              "macro avg": {
+                "precision": 0.25,
+                "recall": 0.5,
+                "f1-score": 0.3333333333333333,
+                "support": 2.0
+              },
+              "weighted avg": {
+                "precision": 0.25,
+                "recall": 0.5,
+                "f1-score": 0.3333333333333333,
+                "support": 2.0
+              }
+            },
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "summarization": {
+          "total": 2,
+          "eligible": 2,
+          "evaluated": 2,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 2,
+            "abstained": 0,
+            "missing_evidence": 0,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 0,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "weighted_f1": 1.0,
+            "mcc": 1.0,
+            "per_class": {
+              "0": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 1
+              },
+              "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 1
+              }
+            },
+            "confusion_matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 1.0
+              },
+              "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 1.0
+              },
+              "accuracy": 1.0,
+              "macro avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 2.0
+              },
+              "weighted avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 2.0
+              }
+            },
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        }
+      },
+      "by_dataset": {
+        "TOY_manually_written_unit_fixture": {
+          "total": 6,
+          "eligible": 5,
+          "evaluated": 5,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 5,
+            "abstained": 0,
+            "missing_evidence": 1,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 1,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 0.6,
+            "balanced_accuracy": 0.6666666666666666,
+            "macro_f1": 0.5833333333333333,
+            "weighted_f1": 0.5666666666666667,
+            "mcc": 0.4082482904638631,
+            "per_class": {
+              "0": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1": 0.6666666666666666,
+                "support": 2
+              },
+              "1": {
+                "precision": 1.0,
+                "recall": 0.3333333333333333,
+                "f1": 0.5,
+                "support": 3
+              }
+            },
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1-score": 0.6666666666666666,
+                "support": 2.0
+              },
+              "1": {
+                "precision": 1.0,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.5,
+                "support": 3.0
+              },
+              "accuracy": 0.6,
+              "macro avg": {
+                "precision": 0.75,
+                "recall": 0.6666666666666666,
+                "f1-score": 0.5833333333333333,
+                "support": 5.0
+              },
+              "weighted avg": {
+                "precision": 0.8,
+                "recall": 0.6,
+                "f1-score": 0.5666666666666667,
+                "support": 5.0
+              }
+            },
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5
+          }
+        }
+      },
+      "by_generator": {
+        "unknown": {
+          "total": 6,
+          "eligible": 5,
+          "evaluated": 5,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 5,
+            "abstained": 0,
+            "missing_evidence": 1,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 1,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 0.6,
+            "balanced_accuracy": 0.6666666666666666,
+            "macro_f1": 0.5833333333333333,
+            "weighted_f1": 0.5666666666666667,
+            "mcc": 0.4082482904638631,
+            "per_class": {
+              "0": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1": 0.6666666666666666,
+                "support": 2
+              },
+              "1": {
+                "precision": 1.0,
+                "recall": 0.3333333333333333,
+                "f1": 0.5,
+                "support": 3
+              }
+            },
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1-score": 0.6666666666666666,
+                "support": 2.0
+              },
+              "1": {
+                "precision": 1.0,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.5,
+                "support": 3.0
+              },
+              "accuracy": 0.6,
+              "macro avg": {
+                "precision": 0.75,
+                "recall": 0.6666666666666666,
+                "f1-score": 0.5833333333333333,
+                "support": 5.0
+              },
+              "weighted avg": {
+                "precision": 0.8,
+                "recall": 0.6,
+                "f1-score": 0.5666666666666667,
+                "support": 5.0
+              }
+            },
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5
+          }
+        }
+      },
+      "errors": 2,
+      "n_new_inferences": 6,
+      "wall_seconds_new_inferences": 0.00013605000003735768,
+      "mean_latency_ms": 0.017515333335419807,
+      "version": "1/t=0.450"
+    },
+    "tfidf_logreg": {
+      "aggregate": {
+        "total": 6,
+        "eligible": 5,
+        "evaluated": 5,
+        "coverage": 1.0,
+        "statuses": {
+          "ok": 6,
+          "abstained": 0,
+          "missing_evidence": 0,
+          "error": 0,
+          "unavailable": 0
+        },
+        "excluded_truth_insufficient": 1,
+        "positive_class": "hallucinated",
+        "averaging": "support-versus-hallucination binary",
+        "metrics": {
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.5,
+          "macro_f1": 0.375,
+          "weighted_f1": 0.45,
+          "mcc": 0.0,
+          "per_class": {
+            "0": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 2
+            },
+            "1": {
+              "precision": 0.6,
+              "recall": 1.0,
+              "f1": 0.75,
+              "support": 3
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "confusion_labels": [
+            "0",
+            "1"
+          ],
+          "classification_report": {
+            "0": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "1": {
+              "precision": 0.6,
+              "recall": 1.0,
+              "f1-score": 0.75,
+              "support": 3.0
+            },
+            "accuracy": 0.6,
+            "macro avg": {
+              "precision": 0.3,
+              "recall": 0.5,
+              "f1-score": 0.375,
+              "support": 5.0
+            },
+            "weighted avg": {
+              "precision": 0.36,
+              "recall": 0.6,
+              "f1-score": 0.45,
+              "support": 5.0
+            }
+          },
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.75,
+          "roc_auc": 0.0,
+          "pr_auc": 0.5111111111111111,
+          "calibration": {
+            "brier": 0.25975196027716396,
+            "ece": 0.1165234305866022,
+            "estimator": "equal-width ECE, 10 bins",
+            "reliability": [
+              {
+                "bin": 4,
+                "count": 5,
+                "observed_frequency": 0.6,
+                "mean_predicted": 0.4834765694133978
+              }
+            ]
+          },
+          "score_note": "Model outputs not independently calibrated; Brier/ECE diagnostic only"
+        }
+      },
+      "by_task": {
+        "dialogue": {
+          "total": 2,
+          "eligible": 1,
+          "evaluated": 1,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 2,
+            "abstained": 0,
+            "missing_evidence": 0,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 1,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "weighted_f1": 1.0,
+            "mcc": 0.0,
+            "per_class": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+              },
+              "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 1
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 0.0
+              },
+              "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 1.0
+              },
+              "accuracy": 1.0,
+              "macro avg": {
+                "precision": 0.5,
+                "recall": 0.5,
+                "f1-score": 0.5,
+                "support": 1.0
+              },
+              "weighted avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 1.0
+              }
+            },
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "qa": {
+          "total": 2,
+          "eligible": 2,
+          "evaluated": 2,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 2,
+            "abstained": 0,
+            "missing_evidence": 0,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 0,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "macro_f1": 0.3333333333333333,
+            "weighted_f1": 0.3333333333333333,
+            "mcc": 0.0,
+            "per_class": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 1
+              },
+              "1": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1": 0.6666666666666666,
+                "support": 1
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 1.0
+              },
+              "1": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1-score": 0.6666666666666666,
+                "support": 1.0
+              },
+              "accuracy": 0.5,
+              "macro avg": {
+                "precision": 0.25,
+                "recall": 0.5,
+                "f1-score": 0.3333333333333333,
+                "support": 2.0
+              },
+              "weighted avg": {
+                "precision": 0.25,
+                "recall": 0.5,
+                "f1-score": 0.3333333333333333,
+                "support": 2.0
+              }
+            },
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "roc_auc": 0.0,
+            "pr_auc": 0.5,
+            "calibration": {
+              "brier": 0.2596741277319627,
+              "ece": 0.010839436652489487,
+              "estimator": "equal-width ECE, 10 bins",
+              "reliability": [
+                {
+                  "bin": 4,
+                  "count": 2,
+                  "observed_frequency": 0.5,
+                  "mean_predicted": 0.4891605633475105
+                }
+              ]
+            },
+            "score_note": "Model outputs not independently calibrated; Brier/ECE diagnostic only"
+          }
+        },
+        "summarization": {
+          "total": 2,
+          "eligible": 2,
+          "evaluated": 2,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 2,
+            "abstained": 0,
+            "missing_evidence": 0,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 0,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "macro_f1": 0.3333333333333333,
+            "weighted_f1": 0.3333333333333333,
+            "mcc": 0.0,
+            "per_class": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 1
+              },
+              "1": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1": 0.6666666666666666,
+                "support": 1
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 1.0
+              },
+              "1": {
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1-score": 0.6666666666666666,
+                "support": 1.0
+              },
+              "accuracy": 0.5,
+              "macro avg": {
+                "precision": 0.25,
+                "recall": 0.5,
+                "f1-score": 0.3333333333333333,
+                "support": 2.0
+              },
+              "weighted avg": {
+                "precision": 0.25,
+                "recall": 0.5,
+                "f1-score": 0.3333333333333333,
+                "support": 2.0
+              }
+            },
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "roc_auc": 0.0,
+            "pr_auc": 0.5,
+            "calibration": {
+              "brier": 0.25332162616484943,
+              "ece": 0.01933301937479215,
+              "estimator": "equal-width ECE, 10 bins",
+              "reliability": [
+                {
+                  "bin": 4,
+                  "count": 2,
+                  "observed_frequency": 0.5,
+                  "mean_predicted": 0.48066698062520785
+                }
+              ]
+            },
+            "score_note": "Model outputs not independently calibrated; Brier/ECE diagnostic only"
+          }
+        }
+      },
+      "by_dataset": {
+        "TOY_manually_written_unit_fixture": {
+          "total": 6,
+          "eligible": 5,
+          "evaluated": 5,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 6,
+            "abstained": 0,
+            "missing_evidence": 0,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 1,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 0.6,
+            "balanced_accuracy": 0.5,
+            "macro_f1": 0.375,
+            "weighted_f1": 0.45,
+            "mcc": 0.0,
+            "per_class": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 2
+              },
+              "1": {
+                "precision": 0.6,
+                "recall": 1.0,
+                "f1": 0.75,
+                "support": 3
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 2.0
+              },
+              "1": {
+                "precision": 0.6,
+                "recall": 1.0,
+                "f1-score": 0.75,
+                "support": 3.0
+              },
+              "accuracy": 0.6,
+              "macro avg": {
+                "precision": 0.3,
+                "recall": 0.5,
+                "f1-score": 0.375,
+                "support": 5.0
+              },
+              "weighted avg": {
+                "precision": 0.36,
+                "recall": 0.6,
+                "f1-score": 0.45,
+                "support": 5.0
+              }
+            },
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1": 0.75,
+            "roc_auc": 0.0,
+            "pr_auc": 0.5111111111111111,
+            "calibration": {
+              "brier": 0.25975196027716396,
+              "ece": 0.1165234305866022,
+              "estimator": "equal-width ECE, 10 bins",
+              "reliability": [
+                {
+                  "bin": 4,
+                  "count": 5,
+                  "observed_frequency": 0.6,
+                  "mean_predicted": 0.4834765694133978
+                }
+              ]
+            },
+            "score_note": "Model outputs not independently calibrated; Brier/ECE diagnostic only"
+          }
+        }
+      },
+      "by_generator": {
+        "unknown": {
+          "total": 6,
+          "eligible": 5,
+          "evaluated": 5,
+          "coverage": 1.0,
+          "statuses": {
+            "ok": 6,
+            "abstained": 0,
+            "missing_evidence": 0,
+            "error": 0,
+            "unavailable": 0
+          },
+          "excluded_truth_insufficient": 1,
+          "positive_class": "hallucinated",
+          "averaging": "support-versus-hallucination binary",
+          "metrics": {
+            "accuracy": 0.6,
+            "balanced_accuracy": 0.5,
+            "macro_f1": 0.375,
+            "weighted_f1": 0.45,
+            "mcc": 0.0,
+            "per_class": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 2
+              },
+              "1": {
+                "precision": 0.6,
+                "recall": 1.0,
+                "f1": 0.75,
+                "support": 3
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ]
+            ],
+            "confusion_labels": [
+              "0",
+              "1"
+            ],
+            "classification_report": {
+              "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 2.0
+              },
+              "1": {
+                "precision": 0.6,
+                "recall": 1.0,
+                "f1-score": 0.75,
+                "support": 3.0
+              },
+              "accuracy": 0.6,
+              "macro avg": {
+                "precision": 0.3,
+                "recall": 0.5,
+                "f1-score": 0.375,
+                "support": 5.0
+              },
+              "weighted avg": {
+                "precision": 0.36,
+                "recall": 0.6,
+                "f1-score": 0.45,
+                "support": 5.0
+              }
+            },
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1": 0.75,
+            "roc_auc": 0.0,
+            "pr_auc": 0.5111111111111111,
+            "calibration": {
+              "brier": 0.25975196027716396,
+              "ece": 0.1165234305866022,
+              "estimator": "equal-width ECE, 10 bins",
+              "reliability": [
+                {
+                  "bin": 4,
+                  "count": 5,
+                  "observed_frequency": 0.6,
+                  "mean_predicted": 0.4834765694133978
+                }
+              ]
+            },
+            "score_note": "Model outputs not independently calibrated; Brier/ECE diagnostic only"
+          }
+        }
+      },
+      "errors": 2,
+      "n_new_inferences": 6,
+      "wall_seconds_new_inferences": 0.0031385069999032567,
+      "mean_latency_ms": 0.5090761666603308,
+      "version": "822caca8e1fd6e12"
+    }
+  },
+  "paired": {
+    "lexical_overlap__vs__tfidf_logreg": {
+      "status": "estimated",
+      "unit": "source/parent group",
+      "n_groups": 5,
+      "n_pairs": 5,
+      "iterations": 250,
+      "seed": 17,
+      "metric": "hallucination F1 delta A-B",
+      "observed_delta": -0.25,
+      "ci95_percentile": [
+        -0.8888888888888888,
+        0.4285714285714286
+      ],
+      "warning": "Exploratory; no multiplicity correction, CI unstable for few source groups"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "detector": "heuristic",
+  "threshold": 0.7,
+  "n_validation": 2,
+  "objective": "validation positive F1",
+  "test_touched": false,
+  "validation_ids_sha256": "c74f9b8c883e9227954d933297478fd589a7e382766bf1633c8fbf5786ee74ea"
+}

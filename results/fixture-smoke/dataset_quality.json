@@ -1,0 +1,32 @@
+{
+  "n_examples": 12,
+  "labels": {
+    "supported": 5,
+    "contradicted": 4,
+    "unsupported": 1,
+    "partially_supported": 1,
+    "insufficient_evidence": 1
+  },
+  "tasks": {
+    "qa": 8,
+    "summarization": 2,
+    "dialogue": 2
+  },
+  "splits": {
+    "train": 4,
+    "validation": 2,
+    "test": 6
+  },
+  "datasets": {
+    "TOY_manually_written_unit_fixture": 12
+  },
+  "missing_evidence": 1,
+  "with_annotations": 0,
+  "invalid": [],
+  "duplicates": [],
+  "questions_repeated": 0,
+  "leakage_issues": [],
+  "near_duplicate_scan": "char TF-IDF nearest neighbor",
+  "warnings": [],
+  "pass": true
+}
