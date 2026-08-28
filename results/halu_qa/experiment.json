@@ -1,0 +1,22 @@
+{
+  "prepared_file": "data/halu_qa.jsonl",
+  "prepared_sha256": "bcd67e021afd0917b900d2eef7d1a447567f18c0b06914d071c90d422508ddbe",
+  "dataset_revision": [
+    [
+      "HaluEval/qa",
+      "72a55d2291cf5f69581e22ac6491b251fc618291"
+    ]
+  ],
+  "n_test": 3004,
+  "test_ids_sha256": "b541c442f0ad909bbd6cba4e9bf515281a35e1c000811c64aa40bf81eddd40ad",
+  "tasks": null,
+  "max_examples": null,
+  "batch_size": 16,
+  "status": "finished",
+  "evaluation_tier": "labelled_dataset",
+  "detectors": {
+    "lexical_overlap": "1/t=0.450",
+    "semantic_similarity": "sentence-transformers/all-MiniLM-L6-v2@c21050a7ef692090620a6d037dd736908f9c7cf6/t=0.600",
+    "nli": "cross-encoder/nli-deberta-v3-base@051133896da0ee0fa7074a5e36bde50b5d9443da"
+  }
+}

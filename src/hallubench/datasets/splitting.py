@@ -31,7 +31,9 @@ def group_split(examples: list[Example], seed=17, train=0.7, validation=0.15,
     for idx, ex in enumerate(examples):
         for key in (("grp", ex.group_id),
                     ("question", normalized_text(ex.question) if normalized_text(ex.question) not in ("summarize the evidence", "use the provided evidence to answer the task") else ""),
-                    ("source_text", normalized_text(ex.evidence) if len(normalized_text(ex.evidence)) >= 80 else "")):
+                    ("source_text", normalized_text(ex.evidence) if len(normalized_text(ex.evidence)) >= 80 else ""),
+                    # same rule as cross_split_collisions: identical long responses must share a split
+                    ("answer", normalized_text(ex.answer) if len(normalized_text(ex.answer)) >= 40 else "")):
             if key[1]:
                 if key in seen:
                     union(idx, seen[key])

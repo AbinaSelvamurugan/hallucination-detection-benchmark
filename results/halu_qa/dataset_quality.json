@@ -1,0 +1,29 @@
+{
+  "n_examples": 20000,
+  "labels": {
+    "supported": 10000,
+    "unsupported": 10000
+  },
+  "tasks": {
+    "qa": 20000
+  },
+  "splits": {
+    "train": 13876,
+    "test": 3004,
+    "validation": 3120
+  },
+  "datasets": {
+    "HaluEval/qa": 20000
+  },
+  "missing_evidence": 0,
+  "with_annotations": 0,
+  "invalid": [],
+  "duplicates": [],
+  "questions_repeated": 10000,
+  "leakage_issues": [],
+  "near_duplicate_scan": "exact checks only (>3000 records)",
+  "warnings": [
+    "Full near-duplicate audit required before publication"
+  ],
+  "pass": true
+}

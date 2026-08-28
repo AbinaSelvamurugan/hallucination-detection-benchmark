@@ -107,3 +107,28 @@ flowchart LR
 ```
 
 See `docs/` for ontology, study design, dataset source details, annotation workflow, limitations, cost, troubleshooting and a research report outline. The repository does not ship public dataset text, model weights, trained checkpoints or predictions presented as public-dataset results. A GitHub Actions workflow (`.github/workflows/ci.yml`) runs the deterministic tests and a fixture-only smoke evaluation on pushes and pull requests.
+
+## Real-data run (15 August 2026)
+
+Executed on a Modal T4 GPU with HaluEval QA (revision pinned above): 20,000 examples (10,000 supported, 10,000
+hallucinated), group-split into 13,876 train / 3,120 validation / 3,004 test. Detectors ran with the **shipped,
+untuned defaults** in `configs/detectors.yaml`. Outputs: `results/halu_qa/`.
+
+| Detector | Precision (hallucination) | Recall | F1 | Accuracy |
+|----------|------|------|------|------|
+| Lexical overlap | 0.763 | 0.225 | 0.348 | 0.577 |
+| Semantic similarity | 0.392 | 0.559 | 0.461 | 0.346 |
+| NLI (cross-encoder) | 0.487 | 0.755 | 0.592 | 0.479 (ROC-AUC 0.547) |
+
+**None of these should be read as a working detector.** On a balanced test set, accuracy of 0.35–0.58 is at or below
+chance, and the NLI score barely separates the classes (ROC-AUC 0.547). The default thresholds were not tuned on the
+validation split. The benchmark's value here is the evaluation protocol, not these scores.
+
+![Detector comparison across precision, recall and F1](results/halu_qa/detector_comparison.png)
+
+Per-detector confusion matrices, precision-recall curves and threshold sensitivity are committed under
+`results/halu_qa/`.
+
+Fixed while running on real data: the dataset quality gate found one answer text shared across splits, because the
+splitter grouped only by group, question and evidence. `group_split` now also groups identical long answers (same
+rule as `cross_split_collisions`), and the quality gate passes with no leakage issues.
